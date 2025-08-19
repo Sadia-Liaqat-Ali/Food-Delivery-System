@@ -1,0 +1,259 @@
+:root {
+  --primary-color: #ff5722;
+  --primary-dark: #e64a19;
+  --secondary-color: #212529;
+  --light-bg: #f8f9fa;
+  --silver-bg: #c0c0c0;
+}
+
+body { 
+  font-family: 'Segoe UI', sans-serif;
+  color: #333;
+}
+
+.navbar-brand { 
+  font-weight: bold; 
+  font-size: 1.5rem; 
+}
+
+.nav-link:hover { 
+  color:white !important; 
+  font-size: 1.1rem;
+  transition: all 0.3s ease;
+}
+
+.hero-section {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.7)), url('img/banner.jpg') no-repeat center center;
+  background-size: cover;
+  color: white;
+  padding: 100px 0;
+  text-shadow: 2px 2px 4px rgba(0,0,0,0.6);
+}
+
+.hero-section h1 { 
+  font-size: 3.5rem;
+  font-weight: 700;
+  margin-bottom: 20px;
+}
+
+.hero-section p {
+  font-size: 1.25rem;
+  max-width: 700px;
+  margin: 0 auto 30px;
+}
+
+.hero-section .btn {
+  background-color: var(--primary-color);
+  border: none;
+  padding: 12px 30px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  border-radius: 50px;
+  transition: all 0.3s ease;
+}
+
+.hero-section .btn:hover {
+  background-color: var(--primary-dark);
+  transform: translateY(-3px);
+  box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+.section-title {
+  font-weight: bold;
+  margin-bottom: 40px;
+  position: relative;
+  padding-bottom: 15px;
+}
+
+.section-title:after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 70px;
+  height: 3px;
+  background-color: var(--primary-color);
+}
+
+.card {
+  border: none;
+  border-radius: 15px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.08);
+  transition: all 0.3s ease;
+  height: 100%;
+  overflow: hidden;
+}
+
+.card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.15);
+}
+
+.card-img-top {
+  height: 200px;
+  object-fit: cover;
+}
+
+.restaurant-card .card-img-top {
+  height: 180px;
+}
+
+.badge {
+  position: absolute;
+  top: 10px;
+  right: 10px;
+  background-color: var(--primary-color);
+  font-weight: 600;
+}
+
+.price {
+  font-weight: 700;
+  color: var(--primary-color);
+  font-size: 1.2rem;
+}
+
+.original-price {
+  text-decoration: line-through;
+  color: #777;
+  font-size: 0.9rem;
+}
+
+.search-section {
+  background-color: var(--light-bg);
+  padding: 30px 0;
+  margin-bottom: 40px;
+  border-radius: 10px;
+}
+
+.footer {
+  background-color: var(--secondary-color);
+  color: #ccc;
+  padding: 40px 0 20px;
+}
+
+.footer a {
+  color: #ffc107;
+  text-decoration: none;
+  transition: all 0.3s ease;
+}
+
+.footer a:hover { 
+  text-decoration: underline;
+  color: white;
+}
+
+.icon { 
+  font-size: 2.5rem; 
+  color: var(--primary-color);
+}
+
+.system { 
+  background-color: var(--silver-bg); 
+}
+
+.rating {
+  color: #ffc107;
+}
+
+.testimonial-card {
+  background-color: white;
+  border-radius: 10px;
+  padding: 20px;
+  margin-bottom: 20px;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.05);
+}
+
+.search-box {
+  position: relative;
+  max-width: 500px;
+  margin: 0 auto;
+}
+
+.search-box input {
+  border-radius: 50px;
+  padding-right: 50px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+}
+
+.search-box button {
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.food-category {
+  margin-bottom: 50px;
+}
+
+.nav-tabs .nav-link {
+  color: #333;
+  font-weight: 600;
+  border: none;
+  border-bottom: 3px solid transparent;
+}
+
+.nav-tabs .nav-link.active {
+  color: var(--primary-color);
+  border-bottom: 3px solid var(--primary-color);
+  background-color: transparent;
+}
+
+.promotion-banner {
+  background-color: var(--primary-color);
+  color: white;
+  padding: 15px 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+.promotion-banner a {
+  color: white;
+  text-decoration: underline;
+}
+
+.menu-item {
+  padding: 8px 15px;
+  border-radius: 20px;
+  background-color: lightgreen;
+  margin: 5px;
+  display: inline-block;
+  font-size: 0.9rem;
+}
+
+.restaurant-search {
+  position: relative;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.restaurant-search input {
+  border-radius: 50px;
+  padding: 15px 25px;
+  border: none;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  font-size: 1.1rem;
+}
+
+.restaurant-search button {
+  position: absolute;
+  right: 8px;
+  top: 8px;
+  border-radius: 50%;
+  background-color: var(--primary-color);
+  border: none;
+  width: 45px;
+  height: 45px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
