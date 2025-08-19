@@ -1,0 +1,89 @@
+<!-- Bootstrap 5 -->
+<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+<!-- Custom Styles -->
+<style>
+  :root {
+    --primary-color: #ff5722;
+    --primary-dark: #e64a19;
+    --secondary-color: #212529;
+    --light-bg: #f8f9fa;
+  }
+
+  body { 
+    font-family: 'Segoe UI', sans-serif;
+    color: #333;
+  }
+
+  .navbar {
+    padding: 0.7rem 1rem;
+  }
+
+  .navbar-brand { 
+    font-weight: bold; 
+    font-size: 1.7rem; 
+    color: var(--primary-color) !important;
+    letter-spacing: 1px;
+    margin: 0 !important;
+    padding: 0 !important;
+  }
+
+  .navbar-brand:hover {
+    color: var(--primary-dark) !important;
+    transform: scale(1.05);
+  }
+
+  .nav-link {
+    font-size: 1rem;
+    font-weight: 500;
+    padding: 8px 15px !important;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    color: #ddd !important;
+    margin: 0 !important;
+  }
+
+  .nav-link:hover { 
+    background: var(--primary-color);
+    color: white !important; 
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.2);
+  }
+
+  .navbar-nav {
+    margin-right: 0 !important;
+  }
+
+  .navbar-dark .navbar-toggler {
+    border: none;
+    outline: none;
+  }
+</style>
+
+<!-- Navbar -->
+<nav class="navbar navbar-expand-lg navbar-dark bg-dark sticky-top shadow">
+  <div class="container-fluid">
+    <!-- Project Name on LHS -->
+      <i class="fas fa-utensils me-2 text-white"></i><a class="navbar-brand" href="#">FoodDelivery</a>
+
+    <!-- Mobile Toggle -->
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- Menus on RHS -->
+    <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+      <ul class="navbar-nav align-items-center">
+        <li class="nav-item"><a class="nav-link active" href="index.php">Home</a></li>
+        <li class="nav-item"><a class="nav-link" href="#restaurants">Restaurants</a></li>
+        <li class="nav-item"><a class="nav-link" href="#menus">Menus</a></li>
+        <li class="nav-item"><a class="nav-link" href="#offers">Offers</a></li>
+        <li class="nav-item"><a class="nav-link" href="about.php">About</a></li>
+        <li class="nav-item"><a class="nav-link" href="contact.php">Contact</a></li>
+        <li class="nav-item"><a class="nav-link" href="login.php">Users Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="Resturant/restaurant_login.php">Restaurants Login</a></li>
+        <li class="nav-item"><a class="nav-link" href="register.php">Register</a></li>
+      </ul>
+    </div>
+  </div>
+</nav>
